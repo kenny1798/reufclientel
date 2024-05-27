@@ -1,0 +1,98 @@
+.App {
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.mu-readmore-btn {
+  background-color: #c0a361;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 35px;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: whitesmoke;
+  border-color: #a0874e;
+  border-radius: 3px;
+}
+.mu-readmore-btn::after {
+  bottom: 5px;
+  content: "";
+  left: 5px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.mu-readmore-btn:hover, .mu-readmore-btn:focus {
+  background-color: #333333;
+  color: #c0a361;
+}
+.mu-readmore-btn:hover::after, .mu-readmore-btn:focus::after {
+  bottom: 0px;
+  content: "";
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+.title {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle{
+  font-size: 50px;
+  font-family: "Tangerine", cursive;
+  line-height: 30px;
+  color: #c0a361
+}
+
+.mu-title h2 {
+  color: #000000;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.mu-title i {
+  font-size: 18px;
+}
+
+.customOverlay {
+  background: rgba(36, 123, 160, 0.7);
+}
+.customModal {
+  background: #b2dbbf;
+  max-width: 500px;
+  width: 80%;
+}
+
+.react-datepicker__day--outside-month {
+  color: transparent !important;
+  pointer-events: none;
+}
+
+.datePicker {
+  width: 100%;
+}
